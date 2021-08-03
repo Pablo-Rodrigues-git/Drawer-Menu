@@ -2,8 +2,11 @@ package com.example.ux
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+
 
 class MainActivity : AppCompatActivity() {
     private val rvList: RecyclerView by lazy {
@@ -31,8 +34,21 @@ class MainActivity : AppCompatActivity() {
                     "Pablo Rodrigues",
                     "(00)0000-0000",
                     "img.png"
+                ),
+                Contact(
+                    "Pablo Rodrigues",
+                    "(00)0000-0000",
+                    "img.png"
                 )
             )
+
         )
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.menu, menu)
+        return true
+
     }
 }

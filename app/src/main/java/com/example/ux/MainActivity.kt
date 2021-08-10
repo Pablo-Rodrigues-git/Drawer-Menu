@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                     "img.png"
                 ),
                 Contact(
-                    "Pablo Rodrigues",
+                    "Maria Rafaela",
                     "(00)0000-0000",
                     "img.png"
                 )
